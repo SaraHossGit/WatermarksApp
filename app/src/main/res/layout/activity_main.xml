@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Welcome to the watermarking app"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="italic"
+            android:textAlignment="center"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/videoBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_video"
+            android:gravity="start|center_vertical"
+            android:paddingStart="20dp"
+            android:drawablePadding="20dp"
+            android:layout_margin="15dp"
+            android:text="Watermark a Video"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/imageBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_image"
+            android:gravity="start|center_vertical"
+            android:paddingStart="20dp"
+            android:drawablePadding="20dp"
+            android:layout_margin="15dp"
+            android:text="Watermark an Image"
+            />
+
+    </LinearLayout>
+</RelativeLayout>
